@@ -54,6 +54,30 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [-73.988, 40.750]
+        },
+        properties: {
+            title: 'CoinDesk, New York, NY',
+            description: 'CoinDesk is a news site specializing in bitcoin and digital currencies. The site was founded by Shakil Khan and was subsequently acquired by Digital Currency Group.',
+            img: 'images/coindesk-logo-1.png'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-73.988, 40.750]
+        },
+        properties: {
+            title: 'HubSpot, Cambridge, MA',
+            description: 'HubSpot is an American developer and marketer of software products for inbound marketing, sales, and customer service. It was founded by Brian Halligan and Dharmesh Shah in 2006.',
+            img: 'images/hubspot_loggo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-84.399, 33.779]
         },
         properties: {

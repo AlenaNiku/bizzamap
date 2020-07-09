@@ -150,6 +150,54 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [-74.127, 4.564]
+        },
+        properties: {
+            title: 'Uber Technologies Inc, Bogota, Colombia',
+            description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
+            img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [4.908, 52.370]
+        },
+        properties: {
+            title: 'Uber Technologies Inc, Amsterdam, Netherlands',
+            description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
+            img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [2.349, 48.866]
+        },
+        properties: {
+            title: 'Uber Technologies Inc, Paris, France',
+            description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
+            img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [31.245, 30.056]
+        },
+        properties: {
+            title: 'Uber Technologies Inc, Cairo, Egypt',
+            description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
+            img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-84.399, 33.779]
         },
         properties: {

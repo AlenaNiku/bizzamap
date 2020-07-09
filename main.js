@@ -66,7 +66,7 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
-            coordinates: [-73.988, 40.750]
+            coordinates: [-71.112, 42.378]
         },
         properties: {
             title: 'HubSpot, Cambridge, MA',

@@ -354,6 +354,18 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [-97.715, 30.276]
+        },
+        properties: {
+            title: 'SolarWinds, Austin, TX',
+            description: 'SolarWinds Inc. is an American company that develops software for businesses to help manage their networks, systems, and information technology infrastructure.',
+            img: 'images/solarwinds.png'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-84.399, 33.779]
         },
         properties: {

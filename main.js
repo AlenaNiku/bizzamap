@@ -234,6 +234,18 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [78.469, 17.396]
+        },
+        properties: {
+            title: 'Uber Technologies Inc, Hyderabad, India',
+            description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
+            img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-84.399, 33.779]
         },
         properties: {

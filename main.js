@@ -19,30 +19,6 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
-            coordinates: [-3.688, 40.430]
-        },
-        properties: {
-            title: 'Spain Startup, Madrid, Spain',
-            description: 'Spain Startup organizes one of the leading startup conferences in the South of Europe. At South Summit, the best talent from the Mediterranean and Latin America meet leading investors and innovative companies from around the world. The Summit brings together top startups and industry leaders for 3 days of innovation, learning, and top-notch networking.',
-            img: 'images/spains.png'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: [-73.988, 40.750]
-        },
-        properties: {
-            title: 'CoinDesk, New York, NY',
-            description: 'CoinDesk is a news site specializing in bitcoin and digital currencies. The site was founded by Shakil Khan and was subsequently acquired by Digital Currency Group.',
-            img: 'images/coindesk-logo-1.png'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
             coordinates: [-71.112, 42.378]
         },
         properties: {
@@ -343,36 +319,12 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
-            coordinates: [153.034, -27.458]
-        },
-        properties: {
-            title: 'BDO Australia, Brisbane, Australia',
-            description: 'BDO Australia Ltd operates operates as a full-service audit, tax and advisory firm. The Company provides its services around the world.',
-            img: 'images/bdo.jpg'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
             coordinates: [144.971, -37.792]
         },
         properties: {
             title: 'BDO Australia, Melbourne, Australia',
             description: 'BDO Australia Ltd operates operates as a full-service audit, tax and advisory firm. The Company provides its services around the world.',
             img: 'images/bdo.jpg'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: [-84.399, 33.779]
-        },
-        properties: {
-            title: 'GreenBook, Worldwide',
-            description: 'GreenBook is one of the foremost market research companies in the world. Every year they hold several global conferences to create connections within consumer insights by bringing together the most innovative voices in the industry. Out of all of these conferences none is greater than IIeX (Insight Innovation Exchange) North America, which features over 150 speakers for 3 full days of groundbreaking content.',
-            img: 'images/greenbook.png'
         }
     },]
 };
@@ -408,19 +360,84 @@ let geojsonTestimonials = {
             name: '—Amy Herman, Senior Program Manager',
         }
     },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [-122.265, 37.470]
-            },
-            properties: {
-                title: 'Gainsight, Redwood City, CA',
-                description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.”',
-                img: 'images/gainsight.png',
-                name: '—Lauren Sommers, VP Corporate Events',
-            }
-        },]
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [153.034, -27.458]
+        },
+        properties: {
+            title: 'BDO Australia, Brisbane, Australia',
+            description: 'Using Bizzabo, we were able to successfully increase attendee engagement, helping us to create an interactive and impactful event experience. ',
+            img: 'images/bdo.jpg',
+            name: '—Phillip Basil-Jones, National Digital & Online Comm. Admin',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-84.399, 33.779]
+        },
+        properties: {
+            title: 'GreenBook, Worldwide',
+            description: 'We are now able to focus less on tedious operations, and more on creating a memorable and seamless experience for our attendees.',
+            img: 'images/greenbook.png',
+            name: '—Emily Fullmer, Global Events Director',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-73.988, 40.750]
+        },
+        properties: {
+            title: 'CoinDesk, New York, NY',
+            description: 'Bizzabo platform allowed us to scale our events using the best revenue dashboard I have come across in the event space',
+            img: 'images/coindesk-logo-1.png',
+            name: '—Dasha Sukovatitsyn, Operations Manager at Coindesk',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-3.688, 40.430]
+        },
+        properties: {
+            title: 'Spain Startup, Madrid, Spain',
+            description: 'The Bizzabo platform gave our event the social impact we really wanted to see.',
+            img: 'images/spains.png',
+            name: '—Sofia Benjumea, Co-Founder and CEO',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-122.265, 37.470]
+        },
+        properties: {
+            title: 'Gainsight, Redwood City, CA',
+            description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.”',
+            img: 'images/gainsight.png',
+            name: '—Lauren Sommers, VP Corporate Events',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [34.778, 32.085]
+        },
+        properties: {
+            title: 'Tel Aviv-Yafo, Israel',
+            description: 'We were not able to get by trying different things together. We had to find something that had the features that we needed to scale.',
+            img: 'images/gainsight.png',
+            name: '—Matt Stone, Senior Director of Marketing',
+        }
+    },]
 };
 
 // add markers to map

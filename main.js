@@ -307,18 +307,6 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
-            coordinates: [-97.715, 30.276]
-        },
-        properties: {
-            title: 'SolarWinds, Austin, TX',
-            description: 'SolarWinds Inc. is an American company that develops software for businesses to help manage their networks, systems, and information technology infrastructure.',
-            img: 'images/solarwinds.png'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
             coordinates: [144.971, -37.792]
         },
         properties: {
@@ -358,6 +346,19 @@ let geojsonTestimonials = {
             description: 'Bizzabo allowed us to cut the event administration process down by giving us more control to manage changes in real-time to sessions, speakers, or agendas. That is a powerful addition to our process.',
             img: 'images/Service-Titan.png',
             name: '—Amy Herman, Senior Program Manager',
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-97.715, 30.276]
+        },
+        properties: {
+            title: 'SolarWinds, Austin, TX',
+            description: 'After swithching from Cvent to Bizzabo, we achieved a remarkable event-attendee satisfactioin rate of 97%',
+            img: 'images/solarwinds.png',
+            name: 'Debbie Lister, Global Events Manager',
         }
     },
     {

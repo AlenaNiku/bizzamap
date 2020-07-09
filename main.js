@@ -366,6 +366,30 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [153.034, -27.458]
+        },
+        properties: {
+            title: 'BDO Australia, Brisbane, Australia',
+            description: 'BDO Australia Ltd operates operates as a full-service audit, tax and advisory firm. The Company provides its services around the world.',
+            img: 'images/bdo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [144.971, -37.792]
+        },
+        properties: {
+            title: 'BDO Australia, Melbourne, Australia',
+            description: 'BDO Australia Ltd operates operates as a full-service audit, tax and advisory firm. The Company provides its services around the world.',
+            img: 'images/bdo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-84.399, 33.779]
         },
         properties: {

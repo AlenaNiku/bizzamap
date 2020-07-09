@@ -416,11 +416,12 @@ geojson.features.forEach(marker => {
         .addTo(map);
 });
 
+// change water layer's color with buttons
 let swatches = document.getElementById('swatches');
 let layer = document.getElementById('layer');
 let colors = [
     '#6761ad',
-    '#f79a71',
+    '#cc7c8d',
     '#4bbacb',
     '#b3a7cc',
     '#f4e5de',
@@ -434,3 +435,5 @@ colors.forEach(function (color) {
     });
     swatches.appendChild(swatch);
 });
+
+

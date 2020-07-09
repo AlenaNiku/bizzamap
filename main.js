@@ -22,7 +22,8 @@ let geojson = {
         },
         properties: {
             title: 'ServiceTitan, Glendale, CA',
-            description: 'ServiceTitan prides itself in providing an intuitive all-in-one software for home service businesses. However, the polished customer experience in their product was not reflected in the attendee experience of previous events. Prior to Bizzabo, ServiceTitan event attendees couldn’t see the event agenda on their phones or check-in onsite in an efficient manner. The registration tool was also separate from their other tools. As a result, it was difficult to sync and analyze data.',
+            description: 'Bizzabo allowed us to cut the event administration process down by giving us more control to manage changes in real-time to sessions, speakers, or agendas. That is a powerful addition to our process.',
+            name: '—Amy Herman, Senior Program Manager',
             img: 'images/Service-Titan.png'
         }
     },
@@ -35,6 +36,7 @@ let geojson = {
         properties: {
             title: 'Gainsight, Redwood City, CA',
             description: 'Gainsight is a SaaS platform that is largely responsible for defining the customer success category. Critical to Gainsight’s market presence is the Pulse brand.',
+            name: '—Amy Herman, Senior Program Manager',
             img: 'images/gainsight.png'
         }
     },
@@ -47,6 +49,7 @@ let geojson = {
         properties: {
             title: 'GreenBook, Worldwide',
             description: 'GreenBook is one of the foremost market research companies in the world. Every year they hold several global conferences to create connections within consumer insights by bringing together the most innovative voices in the industry. Out of all of these conferences none is greater than IIeX (Insight Innovation Exchange) North America, which features over 150 speakers for 3 full days of groundbreaking content.',
+            name: '—Amy Herman, Senior Program Manager',
             img: 'images/greenbook.png'
         }
     },]
@@ -63,6 +66,6 @@ geojson.features.forEach(marker => {
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-        .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p>`))
+            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p><p>${marker.properties.name}</p>`))
         .addTo(map);
 });

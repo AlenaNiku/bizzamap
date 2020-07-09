@@ -420,7 +420,7 @@ let geojsonTestimonials = {
         },
         properties: {
             title: 'Gainsight, Redwood City, CA',
-            description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.”',
+            description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.',
             img: 'images/gainsight.png',
             name: '—Lauren Sommers, VP Corporate Events',
         }
@@ -451,7 +451,7 @@ geojsonTestimonials.features.forEach(marker => {
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p><p>${marker.properties.name}</p>`))
+            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p><p style="font-style: italic;">${marker.properties.name}</p>`))
         .addTo(map);
 });
 

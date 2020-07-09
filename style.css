@@ -13,16 +13,42 @@ body {
 .marker {
     background-image: url('images/bizzabo-logo.png');
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     cursor: pointer; 
 }
 .marker2 {
-    background-image: url('images/bizzabo-logo.png');
+    background-image: url('images/new-logo.png');
     background-size: cover;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     cursor: pointer; 
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 5px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 35px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 75px rgba(19, 137, 173, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 30px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 40px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 35px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 75px rgba(19, 137, 173, 0.2);
+    }
 }
 
 .mapboxgl-popup {
@@ -46,6 +72,10 @@ h3 {
 
 p {
     font-family: 'Raleway', sans-serif;
+}
+
+.name {
+    font-style: italic;
 }
 
 .map-overlay {

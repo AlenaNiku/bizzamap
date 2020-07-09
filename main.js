@@ -406,11 +406,31 @@ geojson.features.forEach(marker => {
     // create a HTML element for each feature
     let el = document.createElement('div');
     el.className = 'marker';
+    marker.className = 'animate__animated animate__bounce'
 
     // make a marker for each feature and add to the map
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p>`))
+        .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p>`))
         .addTo(map);
+});
+
+let swatches = document.getElementById('swatches');
+let layer = document.getElementById('layer');
+let colors = [
+    '#6761ad',
+    '#f79a71',
+    '#4bbacb',
+    '#b3a7cc',
+    '#f4e5de',
+];
+
+colors.forEach(function (color) {
+    let swatch = document.createElement('button');
+    swatch.style.backgroundColor = color;
+    swatch.addEventListener('click', function () {
+        map.setPaintProperty(layer.value, 'fill-color', color);
+    });
+    swatches.appendChild(swatch);
 });

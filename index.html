@@ -10,10 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&family=Raleway&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <title>Bizzamap</title>
 </head>
 <body>
     <div id='map'></div>
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <fieldset>
+                <label>Change water color</label>
+                <select id="layer" name="layer">
+                    <option value="water">Water</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Choose a color</label>
+                <div id="swatches"></div>
+            </fieldset>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

@@ -35,8 +35,8 @@ let geojson = {
         },
         properties: {
             title: 'Gainsight, Redwood City, CA',
-            description: 'Gainsight is a SaaS platform that is largely responsible for defining the customer success category. Critical to Gainsight’s market presence is the Pulse brand.',
-            name: '—Amy Herman, Senior Program Manager',
+            description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.',
+            name: '—Lauren Sommers, VP Corporate Events',
             img: 'images/gainsight.png'
         }
     },
@@ -48,8 +48,8 @@ let geojson = {
         },
         properties: {
             title: 'GreenBook, Worldwide',
-            description: 'GreenBook is one of the foremost market research companies in the world. Every year they hold several global conferences to create connections within consumer insights by bringing together the most innovative voices in the industry. Out of all of these conferences none is greater than IIeX (Insight Innovation Exchange) North America, which features over 150 speakers for 3 full days of groundbreaking content.',
-            name: '—Amy Herman, Senior Program Manager',
+            description: 'We are now able to focus less on tedious operations, and more on creating a memorable and seamless experience for our attendees.',
+            name: '—Emily Fullmer, Global Events Director',
             img: 'images/greenbook.png'
         }
     },]

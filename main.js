@@ -22,8 +22,7 @@ let geojson = {
         },
         properties: {
             title: 'ServiceTitan, Glendale, CA',
-            description: 'Bizzabo allowed us to cut the event administration process down by giving us more control to manage changes in real-time to sessions, speakers, or agendas. That is a powerful addition to our process.',
-            name: '—Amy Herman, Senior Program Manager',
+            description: 'ServiceTitan provides operational software for home services businesses. What makes their events so unique is the strong focus on educational content. From Power User Workshops, Implementation Bootcamps, and the flagship user conference Pantheon, ServiceTitan unlocks key learnings for their avid users and prospects to deliver event experiences curated for professional growth.',
             img: 'images/Service-Titan.png'
         }
     },
@@ -35,9 +34,20 @@ let geojson = {
         },
         properties: {
             title: 'Gainsight, Redwood City, CA',
-            description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.',
-            name: '—Lauren Sommers, VP Corporate Events',
+            description: 'Gainsight is a SaaS platform that is largely responsible for defining the customer success category. Critical to Gainsight’s market presence is the Pulse brand. First launched in 2012, Gainsight’s Pulse has grown from an annual user conference to an omnipresent, year-round initiative comprised of events across the world. Pulse North America alone has managed to scale from 300 to over 6,000 attendees.',
             img: 'images/gainsight.png'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-3.688, 40.430]
+        },
+        properties: {
+            title: 'Spain Startup, Madrid, Spain',
+            description: 'Spain Startup organizes one of the leading startup conferences in the South of Europe. At South Summit, the best talent from the Mediterranean and Latin America meet leading investors and innovative companies from around the world. The Summit brings together top startups and industry leaders for 3 days of innovation, learning, and top-notch networking.',
+            img: 'images/spains.png'
         }
     },
     {
@@ -48,8 +58,7 @@ let geojson = {
         },
         properties: {
             title: 'GreenBook, Worldwide',
-            description: 'We are now able to focus less on tedious operations, and more on creating a memorable and seamless experience for our attendees.',
-            name: '—Emily Fullmer, Global Events Director',
+            description: 'GreenBook is one of the foremost market research companies in the world. Every year they hold several global conferences to create connections within consumer insights by bringing together the most innovative voices in the industry. Out of all of these conferences none is greater than IIeX (Insight Innovation Exchange) North America, which features over 150 speakers for 3 full days of groundbreaking content.',
             img: 'images/greenbook.png'
         }
     },]
@@ -66,6 +75,6 @@ geojson.features.forEach(marker => {
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p><p>${marker.properties.name}</p>`))
+            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p>`))
         .addTo(map);
 });

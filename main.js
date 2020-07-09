@@ -78,6 +78,42 @@ let geojson = {
         type: 'Feature',
         geometry: {
             type: 'Point',
+            coordinates: [13.411, 52.537]
+        },
+        properties: {
+            title: 'HubSpot, Berlin, Germany',
+            description: 'HubSpot is an American developer and marketer of software products for inbound marketing, sales, and customer service. It was founded by Brian Halligan and Dharmesh Shah in 2006.',
+            img: 'images/hubspot_loggo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [3.736, 51.065]
+        },
+        properties: {
+            title: 'HubSpot, Ghent, Belgium',
+            description: 'HubSpot is an American developer and marketer of software products for inbound marketing, sales, and customer service. It was founded by Brian Halligan and Dharmesh Shah in 2006.',
+            img: 'images/hubspot_loggo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-6.255, 53.355]
+        },
+        properties: {
+            title: 'HubSpot, Dublin, Ireland',
+            description: 'HubSpot is an American developer and marketer of software products for inbound marketing, sales, and customer service. It was founded by Brian Halligan and Dharmesh Shah in 2006.',
+            img: 'images/hubspot_loggo.jpg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
             coordinates: [-122.436, 37.773]
         },
         properties: {
@@ -288,6 +324,30 @@ let geojson = {
             title: 'Uber Technologies Inc, Sydney, Australia',
             description: 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.',
             img: 'images/uber.jpeg'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-71.062, 42.357]
+        },
+        properties: {
+            title: 'Drift, Boston, MA',
+            description: 'Drift.com, Inc. is a conversational marketing and sales technology company based in Boston, USA.',
+            img: 'images/drift.png'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [139.643, 35.640]
+        },
+        properties: {
+            title: 'Rakuten, Tokyo, Japan',
+            description: 'Rakuten, Inc. is a Japanese electronic commerce and online retailing company based in Tokyo, founded in 1997 by Japanese businessman Hiroshi Mikitani. Its B2B2C E-Commerce platform Rakuten Ichiba is the largest e-commerce site in Japan and among the worlds largest by sales.',
+            img: 'images/rakuten.png'
         }
     },
     {

@@ -51,3 +51,13 @@ let geojson = {
         }
     },]
 };
+
+// add markers to map
+geojson.features.forEach(marker => {
+
+    // create a HTML element for each feature
+    let el = document.createElement('div');
+    el.className = 'marker';
+
+    
+});

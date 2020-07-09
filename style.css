@@ -17,6 +17,13 @@ body {
     height: 40px;
     cursor: pointer; 
 }
+.marker2 {
+    background-image: url('images/bizzabo-logo.png');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    cursor: pointer; 
+}
 
 .mapboxgl-popup {
     max-width: 300px;

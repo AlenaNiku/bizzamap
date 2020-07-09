@@ -14,30 +14,7 @@ map.addControl(new mapboxgl.NavigationControl());
 // custom geoJSON for rendering geospatial data of the business locations
 let geojson = {
     type: 'FeatureCollection',
-    features: [{
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: [-118.253, 34.133]
-        },
-        properties: {
-            title: 'ServiceTitan, Glendale, CA',
-            description: 'ServiceTitan provides operational software for home services businesses. What makes their events so unique is the strong focus on educational content. From Power User Workshops, Implementation Bootcamps, and the flagship user conference Pantheon, ServiceTitan unlocks key learnings for their avid users and prospects to deliver event experiences curated for professional growth.',
-            img: 'images/Service-Titan.png'
-        }
-    },
-    {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: [-122.265, 37.470]
-        },
-        properties: {
-            title: 'Gainsight, Redwood City, CA',
-            description: 'Gainsight is a SaaS platform that is largely responsible for defining the customer success category. Critical to Gainsight’s market presence is the Pulse brand. First launched in 2012, Gainsight’s Pulse has grown from an annual user conference to an omnipresent, year-round initiative comprised of events across the world. Pulse North America alone has managed to scale from 300 to over 6,000 attendees.',
-            img: 'images/gainsight.png'
-        }
-    },
+    features: [
     {
         type: 'Feature',
         geometry: {
@@ -406,13 +383,58 @@ geojson.features.forEach(marker => {
     // create a HTML element for each feature
     let el = document.createElement('div');
     el.className = 'marker';
-    marker.className = 'animate__animated animate__bounce'
 
     // make a marker for each feature and add to the map
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p>`))
+        .addTo(map);
+});
+
+// custom geoJSON for testimonials
+let geojsonTestimonials = {
+    type: 'FeatureCollection',
+    features: [{
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [-118.253, 34.133]
+        },
+        properties: {
+            title: 'ServiceTitan, Glendale, CA',
+            description: 'Bizzabo allowed us to cut the event administration process down by giving us more control to manage changes in real-time to sessions, speakers, or agendas. That is a powerful addition to our process.',
+            img: 'images/Service-Titan.png',
+            name: '—Amy Herman, Senior Program Manager',
+        }
+    },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-122.265, 37.470]
+            },
+            properties: {
+                title: 'Gainsight, Redwood City, CA',
+                description: 'From someone who has seen a lot of different platforms over the course of 15 years of running events, Bizzabo is by far the most intuitive platform that I have ever used.”',
+                img: 'images/gainsight.png',
+                name: '—Lauren Sommers, VP Corporate Events',
+            }
+        },]
+};
+
+// add markers to map
+geojsonTestimonials.features.forEach(marker => {
+
+    // create a HTML element for each feature
+    let el = document.createElement('div');
+    el.className = 'marker2';
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML(`<h3>${marker.properties.title}</h3><img src="${marker.properties.img}"</img><p>${marker.properties.description}</p><p>${marker.properties.name}</p>`))
         .addTo(map);
 });
 

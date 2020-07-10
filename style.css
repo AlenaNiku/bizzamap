@@ -74,10 +74,6 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-.name {
-    font-style: italic;
-}
-
 .map-overlay {
     font: 15px/25px 'Josefin Sans', sans-serif;
     position: absolute;

@@ -29,25 +29,25 @@ body {
 
 @keyframes animate {
     0% {
-        box-shadow: 0 0 0 5px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 35px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 75px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 1px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 16px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 30px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 45px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 60px rgba(19, 137, 173, 0.2);
     }
     50% {
-        box-shadow: 0 0 0 10px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 30px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 40px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 5px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 15px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 25px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 35px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 45px rgba(19, 137, 173, 0.2);
     }
     100% {
-        box-shadow: 0 0 0 5px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 20px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 35px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 50px rgba(19, 137, 173, 0.2);
-        box-shadow: 0 0 0 75px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 1px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 16px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 30px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 45px rgba(19, 137, 173, 0.2);
+        box-shadow: 0 0 0 60px rgba(19, 137, 173, 0.2);
     }
 }
 
